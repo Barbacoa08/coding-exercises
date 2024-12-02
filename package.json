@@ -5,12 +5,16 @@
 	"scripts": {
 		"all": "npm install && npm run build && npm test",
 		"all:mealplan": "npm install && npm run build:mealplan && npm run test:mealplan",
+		"all:helpsanta": "npm install && npm run build:helpsanta && npm run test:helpsanta",
 		"build": "tsc",
 		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
+		"build:helpsanta": "tsc --baseUrl ./src/help-santa/solution",
 		"test": "vitest run",
 		"test:watch": "vitest",
 		"test:mealplan": "vitest run ./src/meal-planning/solution",
 		"test:watch:mealplan": "vitest ./src/meal-planning/solution",
+		"test:helpsanta": "vitest run ./src/help-santa/solution",
+		"test:watch:helpsanta": "vitest ./src/help-santa/solution",
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
