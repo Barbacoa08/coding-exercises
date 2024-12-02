@@ -11,8 +11,8 @@ mealPrep([120])
 2 // one single long dish
 
 mealPrep([30, 30, 30, 20])
-2 // multiple shorter dishes
+1 // multiple shorter dishes
 
 mealPrep([30, 25, 45, 30, 60, 15])
-3 // many dishes with varying times
+2 // many dishes with varying times
 ```

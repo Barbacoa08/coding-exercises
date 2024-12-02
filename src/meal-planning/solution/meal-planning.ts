@@ -6,20 +6,26 @@
  * - minutesSpent.indexOf(Math.min(...minutesSpent))
  */
 
+/**
+ * fun play:
+ * - each meal has a priority
+ * - test total execution time, if/when that exceeds X time, throw a warning to show that we need to optimize
+ */
+
 const SimultaniousMeals = 2;
 
 export const MealPlan = (meals: number[]) => {
-	const minutesSpent = new Array(SimultaniousMeals).fill(0);
+	const minutesSpentPerWorkStation = new Array(SimultaniousMeals).fill(0);
 
 	while (meals.length > 0) {
 		const mealtime = meals.pop();
-		const stationIndex = minutesSpent.indexOf(Math.min(...minutesSpent));
-		minutesSpent[stationIndex] += mealtime;
+		const nextAvailableStationIndex = minutesSpentPerWorkStation.indexOf(
+			Math.min(...minutesSpentPerWorkStation),
+		);
+		minutesSpentPerWorkStation[nextAvailableStationIndex] += mealtime;
 	}
 
-	console.log("minutes spent: ", { minutesSpent });
-
-	const hoursSpent = Math.ceil(Math.max(...minutesSpent) / 60);
+	const hoursSpent = Math.ceil(Math.max(...minutesSpentPerWorkStation) / 60);
 
 	return hoursSpent;
 };
