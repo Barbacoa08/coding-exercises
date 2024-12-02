@@ -1,3 +1,4 @@
 export const rollCall = (names: string[]) => {
-	throw new Error("Not implemented");
+	const reversedNames = names.map((n) => n.split("").reverse().join(""));
+	return reversedNames.toSorted();
 };

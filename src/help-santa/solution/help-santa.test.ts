@@ -9,7 +9,7 @@ describe("Help Santa", () => {
 	});
 
 	it("should reverse and sort names", () => {
-		expect(rollCall(["yzneT", "ydissaC", "enimA"])).toBe([
+		expect(rollCall(["yzneT", "ydissaC", "enimA"])).toStrictEqual([
 			"Amine",
 			"Cassidy",
 			"Tenzy",
@@ -17,17 +17,17 @@ describe("Help Santa", () => {
 
 		expect(
 			rollCall([
-				"rennuD",
+				"rennoD",
 				"nexiV",
 				"recnarP",
 				"temoC",
 				"neztilB",
 				"recnaD",
-				"diduC",
+				"dipuC",
 				"rehsaD",
 				"hploduR",
 			]),
-		).toBe([
+		).toStrictEqual([
 			"Blitzen",
 			"Comet",
 			"Cupid",
@@ -39,6 +39,6 @@ describe("Help Santa", () => {
 			"Vixen",
 		]);
 
-		expect(rollCall(["A", "B", "C"])).toBe(["A", "B", "C"]);
+		expect(rollCall(["A", "B", "C"])).toStrictEqual(["A", "B", "C"]);
 	});
 });
