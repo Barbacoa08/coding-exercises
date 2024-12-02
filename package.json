@@ -4,9 +4,13 @@
 	"license": "MIT",
 	"scripts": {
 		"all": "npm install && npm run build && npm test",
+		"all:mealplan": "npm install && npm run build:mealplan && npm run test:mealplan",
 		"build": "tsc",
+		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
 		"test": "vitest run",
 		"test:watch": "vitest",
+		"test:mealplan": "vitest run ./src/meal-planning/solution",
+		"test:watch:mealplan": "vitest ./src/meal-planning/solution",
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
