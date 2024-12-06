@@ -29,7 +29,7 @@ describe("Maximize Stocks", () => {
 	});
 
 	it("takes the best option even if it is _not_ the first one", () => {
-		expect(MaximizeStocks([7, 3, 3, 5, 1, 6])).toEqual(5); // buy at 1, sell at 6
+		expect(MaximizeStocks([7, 3, 2, 5, 1, 6])).toEqual(5); // buy at 1, sell at 6
 	});
 
 	it("takes the best option even when there is a much smaller number later on", () => {
