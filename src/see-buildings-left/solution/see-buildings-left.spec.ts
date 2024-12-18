@@ -17,23 +17,27 @@ describe("See Buildings Left", () => {
 		expect(seeBuildingsLeft([3, 0, 1])).toEqual(0);
 	});
 
+	it("should handle single building", () => {
+		expect(seeBuildingsLeft([5])).toEqual(1);
+	});
+
 	it("should multiple buildings that only increase in height", () => {
 		expect(seeBuildingsLeft([1, 2, 3, 4, 5])).toEqual(5);
 	});
 
-	it("should multiple buildings that only decrease in height", () => {
+	it("should handle multiple buildings that only decrease in height", () => {
 		expect(seeBuildingsLeft([5, 4, 3, 2, 1])).toEqual(1);
 	});
 
-	it("should multiple buildings that vary in height", () => {
+	it("should handle multiple buildings that vary in height", () => {
 		expect(seeBuildingsLeft([3, 7, 8, 3, 6, 1])).toEqual(3);
 	});
 
-	it("should multiple buildings that vary in height but have a single very tall building at the beginning", () => {
+	it("should handle a tall building at the start followed by varying heights", () => {
 		expect(seeBuildingsLeft([20, 3, 7, 8, 3, 6, 1])).toEqual(1);
 	});
 
-	it("should multiple buildings that vary in height but the first and last buildings are the tallest", () => {
+	it("should handle tallest buildings at both ends", () => {
 		expect(seeBuildingsLeft([20, 3, 7, 8, 3, 6, 30])).toEqual(2);
 	});
 });
