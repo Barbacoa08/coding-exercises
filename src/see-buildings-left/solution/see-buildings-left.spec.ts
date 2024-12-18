@@ -7,6 +7,16 @@ describe("See Buildings Left", () => {
 		expect(seeBuildingsLeft([])).toEqual(0);
 	});
 
+	it("should throw on invalid inputs", () => {
+		// biome-ignore lint/suspicious/noExplicitAny: purposefully sending bad data for test
+		expect(() => seeBuildingsLeft(null as any)).toThrow();
+	});
+
+	it("should return zero if there are any non-positive numbers (<=0)", () => {
+		expect(seeBuildingsLeft([3, -3, 1])).toEqual(0);
+		expect(seeBuildingsLeft([3, 0, 1])).toEqual(0);
+	});
+
 	it("should multiple buildings that only increase in height", () => {
 		expect(seeBuildingsLeft([1, 2, 3, 4, 5])).toEqual(5);
 	});
