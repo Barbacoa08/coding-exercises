@@ -8,11 +8,13 @@
 		"all:helpsanta": "npm install && npm run build:helpsanta && npm run test:helpsanta",
 		"all:maximizestocks": "npm install && npm run build:maximizestocks && npm run test:maximizestocks",
 		"all:wrapgifts": "npm install && npm run build:wrapgifts && npm run test:wrapgifts",
+		"all:seebuildingsleft": "npm install && npm run build:seebuildingsleft && npm run test:seebuildingsleft",
 		"build": "tsc",
 		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
 		"build:helpsanta": "tsc --baseUrl ./src/help-santa/solution",
 		"build:maximizestocks": "tsc --baseUrl ./src/maximize-stocks/solution",
 		"build:wrapgifts": "tsc --baseUrl ./src/wrap-gifts/solution",
+		"build:seebuildingsleft": "tsc --baseUrl ./src/see-buildings-left/solution",
 		"test": "vitest run ./src/*/solution",
 		"test:watch": "vitest ./src/*/solution",
 		"test:mealplan": "vitest run ./src/meal-planning/solution",
@@ -23,6 +25,8 @@
 		"test:watch:maximizestocks": "vitest ./src/maximize-stocks/solution",
 		"test:wrapgifts": "vitest run ./src/wrap-gifts/solution",
 		"test:watch:wrapgifts": "vitest ./src/wrap-gifts/solution",
+		"test:seebuildingsleft": "vitest run ./src/see-buildings-left/solution",
+		"test:watch:seebuildingsleft": "vitest ./src/see-buildings-left/solution",
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
