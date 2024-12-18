@@ -1,11 +1,11 @@
 /**
- * OPTIMIZATIONS
+ * More complex problem:
  *
  * assume unsorted array, DO NOT SORT, then solve
  */
 
 export const wrapGifts = (giftLengths: number[], paperWidth: number) => {
-	if (giftLengths.length === 0 || paperWidth <= 0) return 0;
+	if (giftLengths.some((length) => length <= 0)) return 0;
 
 	const sortedGiftLengths = giftLengths.toSorted();
 
