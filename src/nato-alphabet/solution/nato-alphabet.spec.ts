@@ -27,7 +27,7 @@ describe("Nato-ifys the sentences", () => {
 			"Using brackets (like this), does not cause issues. Neither does hyphen-ated/slanted words.",
 		);
 		expect(result).toEqual(
-			"Uniform Sierra India November Golf (space) Bravo Romeo Alpha Charlie Kilo Echo Tango Sierra (space) Brackets on Lima India Kilo Echo (space) Tango Hotel India Sierra Brackets off Comma (space) Delta Oscar Echo Sierra (space) November Oscar Tango (space) Charlie Alpha Uniform Sierra Echo (space) India Sierra Sierra Uniform Echo Sierra Stop (space) November Echo India Tango Hotel Echo Romeo (space) Delta Oscar Echo Sierra (space) Hotel Yankee Papa Hotel Echo November Hyphen Alpha Tango Echo Delta Slant Sierra Lima Alpha November Tango Echo Delta (space) Whiskey Oscar Romeo Delta Sierra Stop",
+			"Uniform Sierra India November Golf (space) Bravo Romeo Alfa Charlie Kilo Echo Tango Sierra (space) Brackets on Lima India Kilo Echo (space) Tango Hotel India Sierra Brackets off Comma (space) Delta Oscar Echo Sierra (space) November Oscar Tango (space) Charlie Alfa Uniform Sierra Echo (space) India Sierra Sierra Uniform Echo Sierra Stop (space) November Echo India Tango Hotel Echo Romeo (space) Delta Oscar Echo Sierra (space) Hotel Yankee Papa Hotel Echo November Hyphen Alfa Tango Echo Delta Slant Sierra Lima Alfa November Tango Echo Delta (space) Whiskey Oscar Romeo Delta Sierra Stop",
 		);
 	});
 

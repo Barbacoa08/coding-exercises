@@ -45,7 +45,7 @@ const NatoSet: Record<string, string> = {
 	"9": "Nine",
 
 	// letters
-	a: "Alpha",
+	a: "Alfa",
 	b: "Bravo",
 	c: "Charlie",
 	d: "Delta",
