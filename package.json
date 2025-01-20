@@ -9,12 +9,14 @@
 		"all:maximizestocks": "npm install && npm run build:maximizestocks && npm run test:maximizestocks",
 		"all:wrapgifts": "npm install && npm run build:wrapgifts && npm run test:wrapgifts",
 		"all:seebuildingsleft": "npm install && npm run build:seebuildingsleft && npm run test:seebuildingsleft",
+		"all:natoalphabet": "npm install && npm run build:natoalphabet && npm run test:natoalphabet",
 		"build": "tsc",
 		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
 		"build:helpsanta": "tsc --baseUrl ./src/help-santa/solution",
 		"build:maximizestocks": "tsc --baseUrl ./src/maximize-stocks/solution",
 		"build:wrapgifts": "tsc --baseUrl ./src/wrap-gifts/solution",
 		"build:seebuildingsleft": "tsc --baseUrl ./src/see-buildings-left/solution",
+		"build:natoalphabet": "tsc --baseUrl ./src/nato-alphabet/solution",
 		"test": "vitest run ./src/*/solution",
 		"test:watch": "vitest ./src/*/solution",
 		"test:mealplan": "vitest run ./src/meal-planning/solution",
@@ -27,6 +29,8 @@
 		"test:watch:wrapgifts": "vitest ./src/wrap-gifts/solution",
 		"test:seebuildingsleft": "vitest run ./src/see-buildings-left/solution",
 		"test:watch:seebuildingsleft": "vitest ./src/see-buildings-left/solution",
+		"test:natoalphabet": "vitest run ./src/nato-alphabet/solution",
+		"test:watch:natoalphabet": "vitest ./src/nato-alphabet/solution",
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
