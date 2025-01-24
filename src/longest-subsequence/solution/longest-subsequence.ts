@@ -1,4 +1,8 @@
 export const longestSubsequence = (arr: number[]) => {
+	if (arr.length < 2) {
+		return 0;
+	}
+
 	let max = 1;
 	let subsequence = 1;
 
