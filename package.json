@@ -11,6 +11,7 @@
 		"all:seebuildingsleft": "npm install && npm run build:seebuildingsleft && npm run test:seebuildingsleft",
 		"all:natoalphabet": "npm install && npm run build:natoalphabet && npm run test:natoalphabet",
 		"all:longestsubsequence": "npm install && npm run build:longestsubsequence && npm run test:longestsubsequence",
+		"all:anagrams": "npm install && npm run build:anagrams && npm run test:anagrams",
 		"build": "tsc",
 		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
 		"build:helpsanta": "tsc --baseUrl ./src/help-santa/solution",
@@ -19,6 +20,7 @@
 		"build:seebuildingsleft": "tsc --baseUrl ./src/see-buildings-left/solution",
 		"build:natoalphabet": "tsc --baseUrl ./src/nato-alphabet/solution",
 		"build:longestsubsequence": "tsc --baseUrl ./src/longest-subsequence/solution",
+		"build:anagrams": "tsc --baseUrl ./src/anagrams/solution",
 		"test": "vitest run ./src/*/solution",
 		"test:watch": "vitest ./src/*/solution",
 		"test:mealplan": "vitest run ./src/meal-planning/solution",
@@ -35,6 +37,8 @@
 		"test:watch:natoalphabet": "vitest ./src/nato-alphabet/solution",
 		"test:longestsubsequence": "vitest run ./src/longest-subsequence/solution",
 		"test:watch:longestsubsequence": "vitest ./src/longest-subsequence/solution",
+		"test:anagrams": "vitest run ./src/anagrams/solution",
+		"test:watch:anagrams": "vitest ./src/anagrams/solution",
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
