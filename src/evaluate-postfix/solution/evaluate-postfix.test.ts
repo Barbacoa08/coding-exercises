@@ -5,6 +5,8 @@ import { evaluatePostfix } from "./evaluate-postfix";
 describe("Evaluate postfix expressions", () => {
 	it("should handle no values passed", () => {
 		expect(evaluatePostfix("")).toEqual(0);
+		expect(evaluatePostfix("1")).toEqual(0);
+		expect(evaluatePostfix("12")).toEqual(0);
 	});
 
 	it("should handle simple logic", () => {
