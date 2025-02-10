@@ -13,6 +13,7 @@
 		"all:longestsubsequence": "npm install && npm run build:longestsubsequence && npm run test:longestsubsequence",
 		"all:anagrams": "npm install && npm run build:anagrams && npm run test:anagrams",
 		"all:evaluate-postfix": "npm install && npm run build:evaluate-postfix && npm run test:evaluate-postfix",
+		"all:available-numbers": "npm install && npm run build:available-numbers && npm run test:available-numbers",
 		"build": "tsc",
 		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
 		"build:helpsanta": "tsc --baseUrl ./src/help-santa/solution",
@@ -23,6 +24,7 @@
 		"build:longestsubsequence": "tsc --baseUrl ./src/longest-subsequence/solution",
 		"build:anagrams": "tsc --baseUrl ./src/anagrams/solution",
 		"build:evaluate-postfix": "tsc --baseUrl ./src/evaluate-postfix/solution",
+		"build:available-numbers": "tsc --baseUrl ./src/available-numbers/solution",
 		"test": "vitest run ./src/*/solution",
 		"test:watch": "vitest ./src/*/solution",
 		"test:mealplan": "vitest run ./src/meal-planning/solution",
@@ -43,6 +45,8 @@
 		"test:watch:anagrams": "vitest ./src/anagrams/solution",
 		"test:evaluate-postfix": "vitest run ./src/evaluate-postfix/solution",
 		"test:watch:evaluate-postfix": "vitest ./src/evaluate-postfix/solution",
+		"test:available-numbers": "vitest run ./src/available-numbers/solution",
+		"test:watch:available-numbers": "vitest ./src/available-numbers/solution",
 		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
