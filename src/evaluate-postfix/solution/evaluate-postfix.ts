@@ -1,19 +1,16 @@
 export const evaluatePostfix = (s: string): number => {
 	if (s.length < 3) return 0;
 
-	const operations: string[] = [];
+	const operations: number[] = [];
 
 	for (const element of s) {
 		if (+element) {
-			operations.push(element);
+			operations.push(Number(element));
 		} else {
-			const a = operations.shift();
-			const b = operations.shift();
+			const b = operations.pop();
+			const a = operations.pop();
 
-			// biome-ignore lint/security/noGlobalEval: `eval` is the only way to compute
-			const result = eval(`${a} ${element} ${b}`);
-
-			operations.push(result);
+			operations.push(compute(a as number, b as number, element));
 		}
 	}
 
@@ -23,5 +20,22 @@ export const evaluatePostfix = (s: string): number => {
 		);
 	}
 
-	return Number(operations.pop());
+	return operations.pop() as number;
+};
+
+// Using eval() is dangerous as it can execute arbitrary code. Replacing it with a safer computation method.
+const compute = (a: number, b: number, operator: string): number => {
+	switch (operator) {
+		case "+":
+			return a + b;
+		case "-":
+			return a - b;
+		case "*":
+			return a * b;
+		case "/":
+			if (b === 0) throw new Error("Division by zero");
+			return a / b;
+		default:
+			throw new Error(`Unsupported operator: ${operator}`);
+	}
 };

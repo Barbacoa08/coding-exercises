@@ -9,6 +9,14 @@ describe("Evaluate postfix expressions", () => {
 		expect(evaluatePostfix("12")).toEqual(0);
 	});
 
+	it("should throw on invalid expressions", () => {
+		expect(() => evaluatePostfix("12@")).toThrow();
+	});
+
+	it("should throw on division by zero", () => {
+		expect(() => evaluatePostfix("10/")).toThrow();
+	});
+
 	it("should handle simple logic", () => {
 		expect(evaluatePostfix("12+")).toEqual(3);
 		expect(evaluatePostfix("12-")).toEqual(-1);
