@@ -5,6 +5,8 @@ import { availableNumbers } from "./available-numbers";
 describe("Generate available numbers", () => {
 	it("should handle no values passed", () => {
 		expect(availableNumbers("", [])).toEqual([]);
+		expect(availableNumbers("QB", [])).toEqual([]);
+		expect(availableNumbers("", [1, 2])).toEqual([]);
 	});
 
 	it("should generate numbers when they are available", () => {
@@ -12,4 +14,10 @@ describe("Generate available numbers", () => {
 			4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18,
 		]);
 	});
+
+	// works for QB, RB, WR, TE, OL, DL, LB, DB, K/P, LS
+
+	// throws when no numbers available
+
+	// throws when invalid position passed
 });
