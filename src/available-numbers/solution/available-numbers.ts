@@ -38,5 +38,10 @@ export const availableNumbers = (s: NFLPositionType, n: number[]): number[] => {
 		}
 	}
 
+	// NOTE: in the end, this is a trivially small data set, so none of these optimizations make sense to implement
+	// OPTIMIZATION: check lengths and "for of" by the smaller?
+	// OPTIMIZATION: sort `n` and then pop off numbers from `n` when we pass them?
+	// OPTIMIZATION: pop off numbers from `n` when we see them?
+
 	return result;
 };
