@@ -19,7 +19,6 @@ describe("Resolved the problem", () => {
 	it("should return only the longest palindrome", () => {
 		expect(findLongestPalindrome("abaccdddaddd")).toEqual("d0ddd5a8didld7a");
 		expect(findLongestPalindrome("dddadddccaba")).toEqual("d0ddd5a8didld7a");
-		expect(findLongestPalindrome("dddadddccaba")).toEqual("d0ddd5a8didld7a");
 		expect(findLongestPalindrome("abcdefgg")).toEqual("g0gd58il7a");
 	});
 });
