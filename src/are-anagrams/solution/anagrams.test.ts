@@ -21,6 +21,11 @@ describe("Are anagrams", () => {
 		expect(areAnagrams("boreD", "roBed")).toEqual(true);
 	});
 
+	it("handles multiples of the same letter", () => {
+		expect(areAnagrams("taste", "state")).toEqual(true);
+		expect(areAnagrams("aaaaaaaaaaa", "aaaaaaaaaaa")).toEqual(true);
+	});
+
 	it("should handle obviously wrong values", () => {
 		expect(areAnagrams("asdf", "qwer")).toEqual(false);
 		expect(areAnagrams("abab", "ab")).toEqual(false);
