@@ -4,8 +4,8 @@ import { areAnagrams } from "./anagrams";
 
 describe("Are anagrams", () => {
 	it("should handle no values passed", () => {
-		expect(areAnagrams("", "")).toEqual([]);
-		expect(areAnagrams("asdf", "")).toEqual([]);
-		expect(areAnagrams("", "asdf")).toEqual([]);
+		expect(areAnagrams("", "")).toEqual(false);
+		expect(areAnagrams("asdf", "")).toEqual(false);
+		expect(areAnagrams("", "asdf")).toEqual(false);
 	});
 });

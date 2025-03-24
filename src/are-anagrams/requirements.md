@@ -5,22 +5,22 @@ Given two strings, s and p, return true/false if they are anagrams.
 Examples:
 
 ```javascript
-findAnagrams("cbaebabacd", "abc")
+areAnagrams("cbaebabacd", "abc")
 > false
 
-findAnagrams("fish", "cake")
+areAnagrams("fish", "cake")
 > false
 
-findAnagrams("abab", "ab")
+areAnagrams("abab", "ab")
 > false
 
-findAnagrams("wrap", "praw")
+areAnagrams("wrap", "praw")
 > true
 
-findAnagrams("watch", "chawt")
+areAnagrams("watch", "chawt")
 > true
 
-findAnagrams("agree", "ragee")
+areAnagrams("agree", "ragee")
 > true
 ```
 
