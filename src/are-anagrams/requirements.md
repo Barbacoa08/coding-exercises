@@ -24,4 +24,4 @@ findAnagrams("agree", "ragee")
 > true
 ```
 
-> HINT: you can use a dictionary to do this in O(n) time
+> HINT: you can do this in O(n) time
