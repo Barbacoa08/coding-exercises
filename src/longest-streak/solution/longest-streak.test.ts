@@ -3,7 +3,7 @@ import { expect, describe, it } from "vitest";
 import { findLongestStreak } from "./longest-streak";
 
 describe("Find longest streak", () => {
-	it("should handle no values passed", () => {
+	it("should handle empty arrays and unreachable streak goals", () => {
 		expect(findLongestStreak([], Number.MAX_SAFE_INTEGER)).toEqual(0);
 		expect(findLongestStreak([true, true], Number.MAX_SAFE_INTEGER)).toEqual(0);
 	});
@@ -17,11 +17,11 @@ describe("Find longest streak", () => {
 		expect(findLongestStreak([true, true], 3)).toEqual(0);
 	});
 
-	it("should find streaks of the same length as pased", () => {
+	it("should find streaks of the same length as passed", () => {
 		expect(findLongestStreak([true, false, true, true, true], 3)).toEqual(3);
 	});
 
-	it("should find streaks of larger length as pased", () => {
+	it("should find streaks of larger length as passed", () => {
 		expect(findLongestStreak([true, true, true, true, true], 3)).toEqual(5);
 		expect(findLongestStreak([true, true, true, true], 2)).toEqual(4);
 		expect(findLongestStreak([false, true, true, true], 2)).toEqual(3);

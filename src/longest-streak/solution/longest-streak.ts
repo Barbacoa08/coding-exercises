@@ -1,5 +1,5 @@
 export const findLongestStreak = (arr: boolean[], n: number): number => {
-	if (arr.length < 1 || arr.length < n) {
+	if (arr.length < 1 || arr.length < n || n >= Number.MAX_SAFE_INTEGER) {
 		return 0;
 	}
 
