@@ -9,7 +9,7 @@ describe("Find longest streak", () => {
 	});
 
 	it("should return zero when no streaks exists", () => {
-		expect(findLongestStreak([true, false, true], 1)).toEqual(0);
+		expect(findLongestStreak([true, false, true], 2)).toEqual(0);
 	});
 
 	it("should return zero when all streaks are less than the passed current streak length", () => {
@@ -25,5 +25,19 @@ describe("Find longest streak", () => {
 		expect(findLongestStreak([true, true, true, true, true], 3)).toEqual(5);
 		expect(findLongestStreak([true, true, true, true], 2)).toEqual(4);
 		expect(findLongestStreak([false, true, true, true], 2)).toEqual(3);
+	});
+
+	it("should handle edge cases", () => {
+		expect(findLongestStreak([true], 0)).toEqual(1);
+		expect(findLongestStreak([false], 0)).toEqual(1);
+
+		expect(findLongestStreak([true], 1)).toEqual(1);
+		expect(findLongestStreak([false], 1)).toEqual(1);
+
+		expect(findLongestStreak([false, true], 1)).toEqual(1);
+		expect(findLongestStreak([true, false], 1)).toEqual(1);
+
+		expect(findLongestStreak([true, true], 1)).toEqual(2);
+		expect(findLongestStreak([false, false], 1)).toEqual(2);
 	});
 });
