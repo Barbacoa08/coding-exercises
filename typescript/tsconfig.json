@@ -2,9 +2,9 @@
 	"compilerOptions": {
 		"strict": true,
 		"target": "ESNext",
-		"rootDir": "typescript/src",
-		"outDir": "typescript/dist",
-		"paths": { "@/*": ["typescript/src/*"] },
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"paths": { "@/*": ["./src/*"] },
 		"esModuleInterop": true,
 		"module": "NodeNext",
 		"moduleResolution": "nodenext",
