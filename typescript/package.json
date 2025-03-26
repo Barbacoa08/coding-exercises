@@ -14,7 +14,7 @@
 		"all:anagrams": "npm install && npm run build:anagrams && npm run test:anagrams",
 		"all:evaluate-postfix": "npm install && npm run build:evaluate-postfix && npm run test:evaluate-postfix",
 		"all:available-numbers": "npm install && npm run build:available-numbers && npm run test:available-numbers",
-		"build": "tsc --baseUrl ./src/**/solution/*",
+		"build": "tsc --baseUrl ./",
 		"build:mealplan": "tsc --baseUrl ./src/meal-planning/solution",
 		"build:helpsanta": "tsc --baseUrl ./src/help-santa/solution",
 		"build:maximizestocks": "tsc --baseUrl ./src/maximize-stocks/solution",
