@@ -4,7 +4,8 @@ import (
 	"testing"
 )
 
-const MaxInt = int(^uint(0) >> 1)
+const MaxUint = ^uint(0)
+const MaxInt = int(MaxUint >> 1)
 
 type TestCases struct {
 	arr  []bool
@@ -22,6 +23,7 @@ func TestFindLongestStreak(t *testing.T) {
 		for _, c := range cases {
 			got := LongestStreak(c.arr, c.n)
 			if got != c.want {
+				t.Errorf("case: %v", c.arr)
 				t.Errorf("expected %d, got %d", c.want, got)
 			}
 		}
@@ -37,5 +39,4 @@ func TestFindLongestStreak(t *testing.T) {
 	// t.Run("should find streaks of the same length as passed", func(t *testing.T) {})
 	// t.Run("should find streaks of larger length as passed", func(t *testing.T) {})
 	// t.Run("should handle edge cases", func(t *testing.T) {})
-
 }
