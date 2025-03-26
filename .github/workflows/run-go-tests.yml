@@ -1,4 +1,4 @@
-name: Go Tests
+name: GoLang Tests
 on: [pull_request]
 jobs:
   test:
@@ -13,4 +13,5 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go-version }}
-      - run: go test ./GoLang/...
+      - run: go test ./...
+        working-directory: ./GoLang/
