@@ -14,4 +14,5 @@ jobs:
           node-version: 22
 
       - name: run all the things
-        run: cd ./typescript/ && npm run all
+        run: npm run all
+        working-directory: ./typescript/
