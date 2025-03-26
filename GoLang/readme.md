@@ -8,7 +8,7 @@ There is no "run everything" script (yet).
 
 To run any given method/function, `cd` to the folder and: `go test`
 
-To run all tests, from the root GoLang root (`coding-exercises/GoLang/`): `go test ./...`
+To run all tests, from the root GoLang root (`coding-exercises/GoLang/`): `go test ./.../solution`
 
 ## how to dev
 
