@@ -2,10 +2,10 @@ package the_answer
 
 import "testing"
 
-func TestKnownResult(t *testing.T) {
-	result := KnownResult()
+func TestTheAnswer(t *testing.T) {
+	result := TheAnswer()
 
-	if result != "known" {
+	if result != "Is 42, obviously" {
 		t.Error("test failed")
 	}
 }
