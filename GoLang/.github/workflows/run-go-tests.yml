@@ -1,7 +1,8 @@
-name: CI Go Tests (build+tests)
-on: [push, pull_request]
+name: Go Tests
+on: [pull_request]
 jobs:
   test:
+    name: run all tests
     strategy:
       matrix:
         go-version: [1.23.x, 1.24.x]
