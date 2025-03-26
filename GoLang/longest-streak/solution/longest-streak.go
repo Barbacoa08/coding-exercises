@@ -1,7 +1,7 @@
 package streak
 
 func LongestStreak(arr []bool, n int) int {
-	if len(arr) <= int(n) || len(arr) < 1 {
+	if len(arr) < n || len(arr) < 1 {
 		return 0
 	}
 
