@@ -1,4 +1,4 @@
-name: Go Tests
+name: GoLang Tests
 on: [pull_request]
 jobs:
   test:

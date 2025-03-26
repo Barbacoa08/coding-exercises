@@ -1,8 +1,8 @@
-name: TypeScript CI checks (build, test, lint, formatting)
+name: TypeScript CI checks
 on: [pull_request]
 jobs:
   build:
-    name: build and test
+    name: build, test, lint, formatting
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
