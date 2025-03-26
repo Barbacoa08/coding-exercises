@@ -1,4 +1,4 @@
-package the_answer
+package answer
 
 import "testing"
 
