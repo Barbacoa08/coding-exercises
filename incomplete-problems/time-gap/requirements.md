@@ -1,4 +1,4 @@
-# going out of business discount
+# time gap
 
 > cassidoo: March 31st, 2025
 

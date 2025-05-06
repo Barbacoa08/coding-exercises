@@ -1,4 +1,4 @@
-# going out of business discount
+# calculate discount
 
 > cassidoo: Mar 3, 2025
 

@@ -1,4 +1,4 @@
-# going out of business discount
+# target servings
 
 > cassidoo: April 21st, 2025
 
