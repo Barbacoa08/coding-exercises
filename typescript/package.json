@@ -49,6 +49,7 @@
     "test:watch:evaluate-postfix": "vitest ./src/evaluate-postfix/solution",
     "test:available-numbers": "vitest run ./src/available-numbers/solution",
     "test:watch:available-numbers": "vitest ./src/available-numbers/solution",
+    "test:array-sum": "vitest run ./src/array-sum/solution",
     "test:watch:array-sum": "vitest ./src/array-sum/solution",
     "test:coverage": "vitest run --coverage"
   },
