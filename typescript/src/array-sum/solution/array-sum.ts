@@ -18,5 +18,6 @@ export const arraySum = (arr: number[]) => {
     result += sum;
   }
 
-  return result;
+  // Round to 10 decimal places to handle floating point precision
+  return Number(result.toFixed(10));
 };
