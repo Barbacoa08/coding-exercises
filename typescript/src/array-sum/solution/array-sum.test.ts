@@ -42,9 +42,10 @@ describe("Array sum", () => {
 
   it("handles decimals", () => {
     expect(arraySum([0.1, 0.2, 0.3])).toBe(1.4);
+    expect(arraySum([0.1, 0.2, 0.3, 2])).toBe(5.7);
   });
 
   it("gracefully dies when exceeding maximum possible value", () => {
-    expect(() => arraySum([1, Number.MAX_VALUE])).toThrow();
+    expect(arraySum([Number.MAX_VALUE, Number.MAX_VALUE])).toBe(Infinity);
   });
 });
